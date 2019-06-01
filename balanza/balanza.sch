@@ -1,0 +1,369 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:analog_devices
+LIBS:ftdi
+LIBS:switches
+LIBS:device-lide
+LIBS:balanza-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Screw_Terminal_1x04 J?
+U 1 1 5898DB5A
+P 2450 1875
+F 0 "J?" H 2450 2325 50  0000 C TNN
+F 1 "Screw_Terminal_1x04" V 2300 1875 50  0000 C TNN
+F 2 "" H 2450 1450 50  0001 C CNN
+F 3 "" H 2425 2075 50  0001 C CNN
+	1    2450 1875
+	1    0    0    -1  
+$EndComp
+Text Notes 1425 1800 0    60   ~ 0
+Celda de Carga
+$Comp
+L CONN_01X05 P?
+U 1 1 5898DC9A
+P 5500 1700
+F 0 "P?" H 5500 2000 50  0000 C CNN
+F 1 "CONN_01X05" V 5600 1700 50  0000 C CNN
+F 2 "" H 5500 1700 50  0000 C CNN
+F 3 "" H 5500 1700 50  0000 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1900 5100 1900
+Wire Wire Line
+	5300 1800 5100 1800
+Wire Wire Line
+	5300 1700 5075 1700
+Wire Wire Line
+	5300 1600 5075 1600
+Wire Wire Line
+	5300 1500 5100 1500
+Text Label 5125 1500 0    60   ~ 0
+MISO
+Text Label 5125 1600 0    60   ~ 0
+MOSI
+Text Label 5125 1700 0    60   ~ 0
+MCLK
+Text Label 5150 1800 0    60   ~ 0
+CS
+Text Label 5150 1900 0    60   ~ 0
+GND
+$Comp
+L 7805 U?
+U 1 1 5898DEB0
+P 3175 3275
+F 0 "U?" H 3325 3079 50  0000 C CNN
+F 1 "7805" H 3175 3475 50  0000 C CNN
+F 2 "" H 3175 3275 50  0000 C CNN
+F 3 "" H 3175 3275 50  0000 C CNN
+	1    3175 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5898DEE1
+P 2650 3425
+F 0 "C?" H 2675 3525 50  0000 L CNN
+F 1 "CP" H 2675 3325 50  0000 L CNN
+F 2 "" H 2688 3275 50  0000 C CNN
+F 3 "" H 2650 3425 50  0000 C CNN
+	1    2650 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5898DF56
+P 2400 3425
+F 0 "C?" H 2425 3525 50  0000 L CNN
+F 1 "C" H 2425 3325 50  0000 L CNN
+F 2 "" H 2438 3275 50  0000 C CNN
+F 3 "" H 2400 3425 50  0000 C CNN
+	1    2400 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5898DF94
+P 3675 3425
+F 0 "C?" H 3700 3525 50  0000 L CNN
+F 1 "C" H 3700 3325 50  0000 L CNN
+F 2 "" H 3713 3275 50  0000 C CNN
+F 3 "" H 3675 3425 50  0000 C CNN
+	1    3675 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_ALT D?
+U 1 1 5898E084
+P 2125 3250
+F 0 "D?" H 2125 3350 50  0000 C CNN
+F 1 "D_ALT" H 2125 3150 50  0000 C CNN
+F 2 "" H 2125 3250 50  0000 C CNN
+F 3 "" H 2125 3250 50  0000 C CNN
+	1    2125 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_ALT D?
+U 1 1 5898E0CC
+P 2125 3650
+F 0 "D?" H 2125 3750 50  0000 C CNN
+F 1 "D_ALT" H 2125 3550 50  0000 C CNN
+F 2 "" H 2125 3650 50  0000 C CNN
+F 3 "" H 2125 3650 50  0000 C CNN
+	1    2125 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transformer_1P_SS T?
+U 1 1 5898E15B
+P 1000 3425
+F 0 "T?" H 1000 3675 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 1000 3125 50  0000 C CNN
+F 2 "" H 1000 3425 50  0000 C CNN
+F 3 "" H 1000 3425 50  0000 C CNN
+	1    1000 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x03 J?
+U 1 1 5898E198
+P 1700 3450
+F 0 "J?" H 1700 3800 50  0000 C TNN
+F 1 "Screw_Terminal_1x03" V 1550 3450 50  0000 C TNN
+F 2 "" H 1700 3125 50  0001 C CNN
+F 3 "" H 1675 3550 50  0001 C CNN
+	1    1700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_GND2 Y?
+U 1 1 5898E339
+P 4300 3125
+F 0 "Y?" H 4300 3350 50  0000 C CNN
+F 1 "Crystal_GND2" H 4300 3275 50  0000 C CNN
+F 2 "" H 4300 3125 50  0000 C CNN
+F 3 "" H 4300 3125 50  0000 C CNN
+	1    4300 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5898E3CB
+P 4550 3250
+F 0 "C?" H 4560 3320 50  0000 L CNN
+F 1 "C_Small" H 4560 3170 50  0000 L CNN
+F 2 "" H 4550 3250 50  0000 C CNN
+F 3 "" H 4550 3250 50  0000 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5898E466
+P 4050 3250
+F 0 "C?" H 4060 3320 50  0000 L CNN
+F 1 "C_Small" H 4060 3170 50  0000 L CNN
+F 2 "" H 4050 3250 50  0000 C CNN
+F 3 "" H 4050 3250 50  0000 C CNN
+	1    4050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP?
+U 1 1 5898E4B8
+P 4800 1900
+F 0 "JP?" H 4800 1980 50  0000 C CNN
+F 1 "Jumper_NO_Small" V 4810 1840 50  0000 C CNN
+F 2 "" H 4800 1900 50  0000 C CNN
+F 3 "" H 4800 1900 50  0000 C CNN
+	1    4800 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J?
+U 1 1 5898EF33
+P 2450 825
+F 0 "J?" H 2450 1075 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 2300 825 50  0000 C TNN
+F 2 "" H 2450 600 50  0001 C CNN
+F 3 "" H 2425 825 50  0001 C CNN
+	1    2450 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J?
+U 1 1 5898F29D
+P 2450 1225
+F 0 "J?" H 2450 1475 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 2300 1225 50  0000 C TNN
+F 2 "" H 2450 1000 50  0001 C CNN
+F 3 "" H 2425 1225 50  0001 C CNN
+	1    2450 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J?
+U 1 1 5898F575
+P 2450 2500
+F 0 "J?" H 2450 2750 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 2300 2500 50  0000 C TNN
+F 2 "" H 2450 2275 50  0001 C CNN
+F 3 "" H 2425 2500 50  0001 C CNN
+	1    2450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2600 2825 2600
+Wire Wire Line
+	2650 2400 2825 2400
+Wire Wire Line
+	2825 2400 2825 2425
+Wire Wire Line
+	2650 1575 2800 1575
+Wire Wire Line
+	2650 2175 2800 2175
+Wire Wire Line
+	2650 1325 2875 1325
+Wire Wire Line
+	2875 1325 2875 1350
+Wire Wire Line
+	2650 1125 2900 1125
+Wire Wire Line
+	2650 725  2875 725 
+Wire Wire Line
+	2650 925  2850 925 
+Text Label 2675 725  0    60   ~ 0
++5V
+Text Label 2675 925  0    60   ~ 0
+GND
+Text Label 2675 1125 0    60   ~ 0
+REFIN+
+Text Label 2675 1325 0    60   ~ 0
+REFIN-
+Text Label 2650 1575 0    60   ~ 0
+AN1(+)
+Wire Wire Line
+	2650 1975 2825 1975
+Wire Wire Line
+	2650 1775 2800 1775
+Text Label 2650 1775 0    60   ~ 0
+AN1(-)
+Text Label 2650 2175 0    60   ~ 0
+AN2(-)
+Text Label 2675 1975 0    60   ~ 0
+AN2(+)
+Text Label 2675 2400 0    60   ~ 0
+ACX
+Text Label 2675 2600 0    60   ~ 0
+~ACX
+$Comp
+L SW_Push SW?
+U 1 1 589900AC
+P 5050 2300
+F 0 "SW?" H 5100 2400 50  0000 L CNN
+F 1 "SW_Push" H 5050 2240 50  0000 C CNN
+F 2 "" H 5050 2500 50  0000 C CNN
+F 3 "" H 5050 2500 50  0000 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58990123
+P 5400 2300
+F 0 "R?" V 5480 2300 50  0000 C CNN
+F 1 "R" V 5400 2300 50  0000 C CNN
+F 2 "" V 5330 2300 50  0000 C CNN
+F 3 "" H 5400 2300 50  0000 C CNN
+	1    5400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 589901E3
+P 5550 2300
+F 0 "#PWR?" H 5550 2050 50  0001 C CNN
+F 1 "GND" H 5550 2150 50  0000 C CNN
+F 2 "" H 5550 2300 50  0000 C CNN
+F 3 "" H 5550 2300 50  0000 C CNN
+	1    5550 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FT220XQ U?
+U 1 1 589902B5
+P 5650 3250
+F 0 "U?" H 5100 3850 50  0000 L CNN
+F 1 "FT220XQ" H 5950 3850 50  0000 L CNN
+F 2 "QFN-16" H 5650 3250 50  0000 C CNN
+F 3 "" H 5650 3250 50  0000 C CNN
+	1    5650 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P?
+U 1 1 589903BD
+P 6900 3325
+F 0 "P?" H 7225 3200 50  0000 C CNN
+F 1 "USB_OTG" H 6900 3525 50  0000 C CNN
+F 2 "" V 6850 3225 50  0000 C CNN
+F 3 "" V 6850 3225 50  0000 C CNN
+	1    6900 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L AD7730 U?
+U 1 1 589AA2AE
+P 3850 1700
+F 0 "U?" H 3325 2550 60  0000 C CNN
+F 1 "AD7730" H 3450 2450 60  0000 C CNN
+F 2 "" H 5575 1750 60  0001 C CNN
+F 3 "" H 5575 1750 60  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
